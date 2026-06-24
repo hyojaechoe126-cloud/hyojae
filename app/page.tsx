@@ -21,10 +21,9 @@ export default function Home() {
 
           {/* 네비게이션 메뉴 (데스크탑 브라우저 크기에서만 노출되는 반응형 구조) */}
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-            <Link href="#" className="hover:text-indigo-400 transition-colors">홈</Link>
-            <Link href="#" className="hover:text-indigo-400 transition-colors">학습방</Link>
-            <Link href="#" className="hover:text-indigo-400 transition-colors">커뮤니티</Link>
-            {/* [여기에 새로운 글로벌 메뉴 항목을 추가하세요] */}
+            <Link href="/" className="hover:text-indigo-400 transition-colors">홈</Link>
+            <Link href="/game" className="hover:text-indigo-400 transition-colors">수학 게임</Link>
+            <Link href="/admin" className="hover:text-indigo-400 transition-colors">관리자 대시보드</Link>
           </nav>
 
           {/* 헤더 우측 유틸리티 영역 */}

@@ -322,6 +322,9 @@ export default function GamePage() {
               <span className={`w-2.5 h-2.5 rounded-full ${isSupabaseActive ? "bg-emerald-500 shadow-lg shadow-emerald-500/50" : "bg-amber-500 shadow-lg shadow-amber-500/50"}`} />
               {isSupabaseActive ? "Supabase 연결됨" : "로컬 모드 실행 중"}
             </span>
+            <Link href="/admin" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+              관리자
+            </Link>
             <Link href="/" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
               메인으로
             </Link>

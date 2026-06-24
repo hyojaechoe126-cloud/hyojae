@@ -26,3 +26,9 @@ CREATE POLICY "Allow anonymous write access"
 ON game_results FOR INSERT
 TO anon
 WITH CHECK (true);
+
+-- 6. 누구나 게임 결과를 삭제할 수 있도록 DELETE 정책 허용 (익명 접근 - 관리자 제어용)
+CREATE POLICY "Allow anonymous delete access"
+ON game_results FOR DELETE
+TO anon
+USING (true);

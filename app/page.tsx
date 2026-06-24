@@ -65,9 +65,9 @@ export default function Home() {
 
           {/* 기능 추가를 유도하는 핵심(Placeholder) 버튼 */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <button className="w-full sm:w-auto bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-600 hover:to-violet-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-indigo-500/20 transition-all hover:scale-105 active:scale-98 cursor-pointer">
-              학습 시작하기
-            </button>
+            <Link href="/game" className="w-full sm:w-auto bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-600 hover:to-violet-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-indigo-500/20 transition-all hover:scale-105 active:scale-98 cursor-pointer text-center">
+              학습 게임 시작하기
+            </Link>
             <button className="w-full sm:w-auto bg-slate-900 border border-slate-800 text-slate-300 hover:text-white font-semibold px-8 py-4 rounded-xl transition-all hover:bg-slate-800 cursor-pointer">
               더 알아보기
             </button>
@@ -85,12 +85,12 @@ export default function Home() {
             {/* [여기에 새로운 컴포넌트를 추가하세요] 
                 아래 Grid 영역은 향후 개별 컴포넌트(예: QuizCard.tsx, VideoPlayer.tsx 등)로 컴포넌트화하기에 최적입니다. */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left max-w-4xl mx-auto">
-              {/* 기능 카드 1 */}
-              <div className="p-6 rounded-xl bg-slate-900/30 border border-slate-850 hover:border-indigo-500/30 transition-all group">
+              {/* 기능 카드 1 (수학 게임 링크로 변경) */}
+              <Link href="/game" className="p-6 rounded-xl bg-slate-900/30 border border-slate-850 hover:border-indigo-500/30 transition-all group block cursor-pointer">
                 <span className="text-2xl mb-3 block group-hover:scale-110 transition-transform origin-left">📝</span>
-                <h4 className="font-medium text-white mb-1">스마트 퀴즈</h4>
-                <p className="text-xs text-slate-400">개념 이해도를 평가하는 다양한 퀴즈 컴포넌트를 여기에 개발하세요.</p>
-              </div>
+                <h4 className="font-medium text-white mb-1">스마트 수학 퀴즈</h4>
+                <p className="text-xs text-slate-400">제한시간 동안 연산 문제를 풀고 점수를 획득하여 실시간 랭킹에 등록해보세요.</p>
+              </Link>
               
               {/* 기능 카드 2 */}
               <div className="p-6 rounded-xl bg-slate-900/30 border border-slate-850 hover:border-violet-500/30 transition-all group">

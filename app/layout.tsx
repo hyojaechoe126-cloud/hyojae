@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import AiTutor from "@/components/AiTutor";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="ko" className={`${inter.variable}`}>
       <body className="font-sans antialiased bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-indigo-500/30">
         {children}
+        <AiTutor />
       </body>
     </html>
   );
